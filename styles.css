@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 10vh;
+    padding: 0 5vw;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3vw;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+header nav ul li a:hover{
+    color: lightgray;
+}
+
+header .logo{
+    cursor: pointer;
+}
+
+main{
+    height: calc(100% - 15vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .container{
+    height: 100%;
+    width: 50%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+main .get-input{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main .get-input input{
+    width: 35vmin;
+    border: 2px solid lightgray;
+    outline: none;
+    border-radius: 10px;
+    height: 4vh;
+    padding-left: 10px;
+}
+
+main button{
+    width: 15vmin;
+    min-width: 100px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+main button:hover{
+    background: #141414;
+}
+
+.container h1{
+    font-size: 4vmin;
+}
+
+.validation{
+    height: 100%;
+    width: 50%;
+    background: aqua;
+}
+
+#result-container div::first-letter{
+    text-transform: uppercase;
+}
+.hidden{
+    display: none;
+}
+.validation img{
+    width: 10vmin;
+}
+
+footer{
+    height: 5vh;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (orientation: portrait){
+    main{
+        flex-direction: column;
+    }
+}
